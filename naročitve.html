@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naročila</title>
+</head>
+<body>
+
+<h2>Vnos podatkov za naročilo</h2>
+
+<form action="naročila.php" method="POST">
+    <label for="ime">Ime:</label><br>
+    <input type="text" id="ime" name="ime" required><br><br>
+
+    <label for="priimek">Priimek:</label><br>
+    <input type="text" id="priimek" name="priimek" required><br><br>
+
+    <label for="naslov">Naslov:</label><br>
+    <input type="text" id="naslov" name="naslov" required><br><br>
+
+    <label for="kolicina">Količina:</label><br>
+    <input type="number" id="kolicina" name="kolicina" min="1" required><br><br>
+
+    <label for="opomba">Opomba:</label><br>
+    <textarea id="opomba" name="opomba" rows="4" cols="50"></textarea><br><br>
+
+    <input type="submit" value="Oddaj naročilo">
+</form>
+
+</body>
+</html>
+
